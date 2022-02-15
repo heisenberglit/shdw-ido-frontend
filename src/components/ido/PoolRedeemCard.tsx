@@ -26,24 +26,24 @@ const PoolRedeemCard: React.FC<PoolRedeemCardProps> = ({ pool }) => {
   const [submitting, setSubmitting] = useState(false)
   const [loading, setLoading] = useState(true)
 
-  const WATERMELON_TOTAL = 30_000_000
+  const WATERMELON_TOTAL = 50_000_000
 
   const contributeBalance = largestAccounts.redeemable?.balance || 0
 
-  const realTokenPrice = new BigNumber(1.734398352)
+  const realTokenPrice = new BigNumber(0.1)
 
   const redeemablePrtAmount = useMemo(() => {
     const redeemableSupply = calculateSupply(mints, pool.redeemableMint)
-    // console.log('prt balance', prtBalance)
-    // console.log('usdcBalance', usdcBalance)
-    // console.log('redeemableSupply', redeemableSupply)
-    // console.log('contributeBalance', contributeBalance)
-    const basePrice = new BigNumber(0.5)
+    console.log('prt balance', prtBalance)
+    console.log('usdcBalance', usdcBalance)
+    console.log('redeemableSupply', redeemableSupply)
+    console.log('contributeBalance', contributeBalance)
+    console.log('realTokenPrice', realTokenPrice.toString());
+    const basePrice = new BigNumber(0.1)
     return prtBalance && redeemableSupply
       ? (contributeBalance * prtBalance) / redeemableSupply
       : 0
-    // console.log('realTokenPrice', realTokenPrice.toString())
-    if (realTokenPrice < new BigNumber(0.5)) {
+    if (realTokenPrice < new BigNumber(0.1)) {
       const tokenMultiple = realTokenPrice.dividedBy(basePrice)
       // console.log('tokenMultiple', tokenMultiple.toString())
       return prtBalance && redeemableSupply
@@ -133,7 +133,7 @@ const PoolRedeemCard: React.FC<PoolRedeemCardProps> = ({ pool }) => {
           />
           <NumberText
             className="font-bold text-mdx"
-            value={52029280.58}
+            value={usdcBalance.toString()}
             defaultIfNull="N/A"
           />
         </div>
@@ -197,7 +197,7 @@ const PoolRedeemCard: React.FC<PoolRedeemCardProps> = ({ pool }) => {
         disabled={disableSubmit}
         isLoading={submitting}
       >
-        {submitting ? 'Waiting approval' : 'Redeem SHDW'}
+        {submitting ? 'Waiting approval' : 'Redeem NYN'}
       </Button>
     </div>
   )

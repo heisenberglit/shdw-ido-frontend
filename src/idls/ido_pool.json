@@ -12,7 +12,7 @@
         },
         {
           "name": "poolSigner",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
@@ -22,6 +22,11 @@
         },
         {
           "name": "usdcMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "watermelonMint",
           "isMut": false,
           "isSigner": false
         },
@@ -37,6 +42,11 @@
         },
         {
           "name": "distributionAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "payer",
           "isMut": false,
           "isSigner": true
         },
@@ -59,17 +69,64 @@
           "name": "clock",
           "isMut": false,
           "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
         }
       ],
       "args": [
         {
           "name": "numIdoTokens",
-          "type": "u64"
+          "type": "string"
         },
         {
           "name": "nonce",
           "type": "u8"
         },
+        {
+          "name": "startIdoTs",
+          "type": "i64"
+        },
+        {
+          "name": "endDepositsTs",
+          "type": "i64"
+        },
+        {
+          "name": "endIdoTs",
+          "type": "i64"
+        },
+        {
+          "name": "withdrawMelonTs",
+          "type": "i64"
+        },
+        {
+          "name": "maxPoolUsdc",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "modifyIdoTime",
+      "accounts": [
+        {
+          "name": "poolAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "distributionAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "payer",
+          "isMut": false,
+          "isSigner": true
+        }
+      ],
+      "args": [
         {
           "name": "startIdoTs",
           "type": "i64"
@@ -93,12 +150,12 @@
       "accounts": [
         {
           "name": "poolAccount",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
           "name": "poolSigner",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
@@ -149,12 +206,12 @@
       "accounts": [
         {
           "name": "poolAccount",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
           "name": "poolSigner",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
@@ -205,12 +262,12 @@
       "accounts": [
         {
           "name": "poolAccount",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
           "name": "poolSigner",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
@@ -261,12 +318,12 @@
       "accounts": [
         {
           "name": "poolAccount",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
           "name": "poolSigner",
-          "isMut": false,
+          "isMut": true,
           "isSigner": false
         },
         {
@@ -276,6 +333,11 @@
         },
         {
           "name": "distributionAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "payer",
           "isMut": false,
           "isSigner": true
         },
@@ -295,7 +357,63 @@
           "isSigner": false
         }
       ],
-      "args": []
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "withdrawPoolWatermelon",
+      "accounts": [
+        {
+          "name": "poolAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "poolSigner",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "poolWatermelon",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "distributionAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "payer",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "creatorWatermelon",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
     }
   ],
   "accounts": [
@@ -347,6 +465,18 @@
           {
             "name": "withdrawMelonTs",
             "type": "i64"
+          },
+          {
+            "name": "maxPoolUsdc",
+            "type": "u64"
+          },
+          {
+            "name": "totalContribution",
+            "type": "u64"
+          },
+          {
+            "name": "totalRedeem",
+            "type": "u64"
           }
         ]
       }
@@ -402,9 +532,29 @@
       "code": 309,
       "name": "InvalidNonce",
       "msg": "Given nonce is invalid"
+    },
+    {
+      "code": 310,
+      "name": "InvalidParam",
+      "msg": "Invalid param"
+    },
+    {
+      "code": 311,
+      "name": "UsdcWithdrawNotAllowed",
+      "msg": "Cannot withdraw USDC after depositing"
+    },
+    {
+      "code": 312,
+      "name": "WithdrawTokensNotAllowed",
+      "msg": "Tokens still need to be redeemed"
+    },
+    {
+      "code": 313,
+      "name": "PoolFilled",
+      "msg": "Pool has got filled. No more can be contributed"
     }
   ],
   "metadata": {
-    "address": "5s48HdiM1PjxqHDpGvZUVnX6eKbGbvN15rFHJ7RwxCv4"
+    "address": "4jo3edmeRYPZypDAbYNmzUxt6zi8BR1sQMGphnsNAgJ9"
   }
 }

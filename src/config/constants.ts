@@ -29,22 +29,22 @@ export const RPC_ENDPOINTS: WalletEndpoint[] = [
 ]
 
 export const IDO_RESULTS = {
-  '9KLppKiDcTiaonj55PmwiZCDU62R6JFz1uPEc26wXB5J': {},
+  '3UnvNhP3N3CC2BQWjUNfc5na37wYr6E3ro9Yd1RKnyFr': {},
 }
 
 export const IDO_ENDPOINTS = [
-  {
-    network: 'mainnet-beta',
-    programId: 'BRkhzczJALNLNbaYtLiuo4yQi6i33fQDt3z1wiujyKU4',
-    usdcMint: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
-    pools: ['9KLppKiDcTiaonj55PmwiZCDU62R6JFz1uPEc26wXB5J'],
-  },
   // {
-  //   network: 'devnet',
-  //   programId: '9NN9Wux6ZRg9mhrh9wRFfuDRCsN77C2dp3KrkFDcip8B',
-  //   usdcMint: '32BQCx7UNNYY7QEExZxDSDt3Y5SZGp8xZR95bYpNjHDm',
-  //   pools: ['FtsHJmMVyyFMEXmuT5M7C7xAZnudmUtQ8F8groUXVyqJ'],
+  //   net  work: 'mainnet-beta',
+  //   programId: 'BRkhzczJALNLNbaYtLiuo4yQi6i33fQDt3z1wiujyKU4',
+  //   usdcMint: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
+  //   pools: ['9KLppKiDcTiaonj55PmwiZCDU62R6JFz1uPEc26wXB5J'],
   // },
+  {
+    network: 'devnet',
+    programId: '4jo3edmeRYPZypDAbYNmzUxt6zi8BR1sQMGphnsNAgJ9',
+    usdcMint: '6VBXyszEKZ6qW5GarpjTVygY8riZnu2h6EMA9W1pCAd6',
+    pools: ['3UnvNhP3N3CC2BQWjUNfc5na37wYr6E3ro9Yd1RKnyFr'],
+  },
   // {
   //   network: 'devnet' as web3.Cluster,
   //   programId: '7EYV5r3K4efZXrPynWzidc5KTFTKjCtaQcpLV998zniF',

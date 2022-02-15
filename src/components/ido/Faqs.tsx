@@ -49,13 +49,13 @@ const faqs = [
         <br />
         <p>
           Step #5 - After the deposit phase has expired, you can return to the
-          IDO page and collect your $SHDW token! The redemption phase will last
-          for as long as there are outstanding $SHDW tokens needing to be
+          IDO page and collect your $NYN token! The redemption phase will last
+          for as long as there are outstanding $NYN tokens needing to be
           redeemed.
         </p>
         <br />
         <p>
-          Step #6 - Congratulations! Your $SHDW tokens are now in your wallet!
+          Step #6 - Congratulations! Your $NYN tokens are now in your wallet!
         </p>
         <br />
       </>

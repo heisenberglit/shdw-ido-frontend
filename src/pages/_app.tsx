@@ -17,18 +17,19 @@ BigNumber.config({
 })
 
 function MyApp({ Component, pageProps }) {
-  const title = 'Genesys Go IDO'
+  const title = 'Nyan Heroes IDO'
   const description =
-    'This is the IDO (initial DEX offering) page for Genesys Go.'
-  const keywords = 'Genesys Go, Shadowy Super Coder Dao, SSC DAO, SSC, Solana'
-  const baseUrl = 'https://ido.genesysgo.com'
+    'This is the IDO (initial DEX offering) page for Nyan Heroes.'
+  const keywords = 'Nyan Heroes, NYN , Nyan, Solana'
+  const baseUrl = 'https://ido.nyanheroes.com'
 
   const router = useRouter()
 
   useEffect(() => {
     // Initialize Fathom when the app loads
+    //Check for nyan
     Fathom.load('OAIHVCMC', {
-      includedDomains: ['ido.genesysgo.com'],
+      includedDomains: ['ido.nyanheroes.com'],
       url: 'https://principled-nutritious.genesysgo.com/script.js',
     })
 
@@ -81,7 +82,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content={`${baseUrl}/images/gg-single.png`} />
         <meta property="og:image:type" content="image/png" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@genesysgo" />
+        <meta name="twitter:site" content="@nyanheroes" />
       </Head>
       <ThemeProvider defaultTheme="dark" attribute="class">
         <Ido Component={Component} pageProps={pageProps} />

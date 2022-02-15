@@ -372,7 +372,7 @@ const useWalletStore = create<WalletStore>((set, get) => ({
         wallet,
         connection,
         sendingMessage: 'Sending redeem transaction...',
-        successMessage: 'SHDW redeemed successfully!',
+        successMessage: 'NYN redeemed successfully!',
       })
       await actions.fetchWalletTokenAccounts()
     },

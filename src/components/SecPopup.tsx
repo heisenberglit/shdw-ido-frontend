@@ -7,7 +7,7 @@ const SecPopup = ({ popupCallback }) => {
       <div className="h-screen ml-auto mr-auto max-w-4xl pb-8 pl-4 pr-4 flex flex-col w-full h-full justify-center items-center">
         <h1 className="text-center text-lg font-extrabold">Terms of Use</h1>
         <p className="text-center mt-8">
-          By using this website and investing in the <b>SHDW</b> token, you will
+          By using this website and investing in the <b>NYN</b> token, you will
           be deemed to have: <br /> <br />
           (I) read the{' '}
           <a
@@ -29,14 +29,14 @@ const SecPopup = ({ popupCallback }) => {
           <a
             className="text-inputSecondary"
             rel="noreferrer"
-            href="https://genesysgo.medium.com/the-comprehensive-guide-to-genesysgo-and-the-shdw-ido-278b90d3186c"
+            href="https://nyan-heroes.gitbook.io/nyan-heroes/"
             target="_blank"
           >
             operation of this IDO
           </a>
           . <br />
           (II) confirmed that you are not based in a jurisdiction where buying,
-          trading and/or owning the SHDW token would be prohibited or restricted
+          trading and/or owning the NYN token would be prohibited or restricted
           in any manner. <br />
           (III) understood that, despite our best efforts, there can still be
           exploit risks that exist within the app. (Please do not invest more

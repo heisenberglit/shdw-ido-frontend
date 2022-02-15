@@ -29,7 +29,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
     tooltip: tooltipSale,
     tooltipVisible: tooltipSaleVisible,
   } = useTooltip(
-    `In the first 24 hours, you may deposit your USDC into the vault. During the sale period, the SHDW price can fluctuate.`,
+    `In the first 5 days, you may deposit your USDC into the vault. During the sale period, the NYN price can fluctuate.`,
     {
       placement: 'bottom-start',
       trigger: 'hover',
@@ -40,7 +40,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
     targetRef: targetGraceRef,
     tooltip: tooltipGrace,
     tooltipVisible: tooltipGraceVisible,
-  } = useTooltip(`After 24 hours, deposits will be restricted.`, {
+  } = useTooltip(`After 5 days, deposits will be restricted.`, {
     placement: 'bottom-start',
     trigger: 'hover',
   })
@@ -113,12 +113,12 @@ const StatsCard: React.FC<StatsCardProps> = ({
         </div>
       </div>
       <div className="bg-secondary rounded-xl p-6 text-center">
-        <p className="text-sm text-secondary">SHDW For Sale</p>
+        <p className="text-sm text-secondary">NYN For Sale</p>
         <div className="flex items-center justify-center pt-2">
           <img
             className="h-5 mr-2 w-auto"
             src="/icons/logo.png"
-            alt="Genesys Go"
+            alt="Nyan IDO"
           />
           <NumberText
             className="font-bold text-mdx"
