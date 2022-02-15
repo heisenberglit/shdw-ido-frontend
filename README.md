@@ -1,4 +1,4 @@
-# Nyan Heroes IDO - Frontend
+# IDO - Frontend
 
 A modification of the [Mango Token Sale](https://github.com/blockworks-foundation/mango-token-sale) and Aurory IDO amd GenesysGo IDO.
 
