@@ -250,7 +250,10 @@ const PoolContribCard: React.FC<PoolContribCardProps> = ({ pool }) => {
           notify({
             type: 'error',
             title: isDeposit ? 'Deposit error' : 'Withdraw error',
-            message: e.message && e.message.includes("0x139") ? "Pool of 50M USDC got filled" :e.message,
+            message:
+              e.message && e.message.includes('0x139')
+                ? 'Pool of 50M USDC got filled'
+                : e.message,
           })
           setSubmitting(false)
         }
