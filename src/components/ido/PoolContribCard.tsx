@@ -3,6 +3,7 @@ import {
   ExclamationIcon,
   InformationCircleIcon,
 } from '@heroicons/react/outline'
+import { LAMPORTS_PER_SOL } from '@solana/web3.js'
 import BigNumber from 'bignumber.js'
 import React, {
   Fragment,
@@ -120,6 +121,8 @@ function ConfirmDepositModal({ open, setOpen, depositAmount, submitDeposit }) {
 const PoolContribCard: React.FC<PoolContribCardProps> = ({ pool }) => {
   const actions = useWalletStore((s) => s.actions)
   const connected = useWalletStore((s) => s.connected)
+  const connection = useWalletStore((s) => s.connection);
+  const wallet = useWalletStore((s) => s.wallet);
   const largestAccounts = useLargestAccounts(pool)
   const { startIdo, endIdo, endDeposits, poolStatus } = usePool(pool)
   const vaults = useVaults(pool)

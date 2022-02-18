@@ -118,7 +118,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
           <img
             className="h-5 mr-2 w-auto"
             src="/icons/logo.png"
-            alt="Nyan IDO"
+            alt=" "
           />
           <NumberText
             className="font-bold text-mdx"

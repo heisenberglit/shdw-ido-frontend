@@ -4,7 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 const faqs = [
   {
     question: 'When is the IDO taking place?',
-    answer: 'The IDO begins on January 3rd, 2022 @ 2:00pm UTC',
+    answer: 'The IDO begins on Feb 18th, 2022 @ 3pm UTC',
   },
   {
     question: 'Will I need SOL in my wallet?',
@@ -27,8 +27,6 @@ const faqs = [
         <p>
           Step #1 - Connect your wallet (we recommend using Phantom). You will
           need to have USDC in your wallet in order to participate in the IDO.
-          You do not need to own a Shadowy Super Coder NFT in order to
-          participate in the IDO.
         </p>
         <br />
         <p>
@@ -43,7 +41,7 @@ const faqs = [
         <br />
         <p>
           Step #4 - Wait until the deposit phase of the IDO expires. The deposit
-          phase opens on Jan 3rd at 2pm UTC and will last for 24 hours in order
+          phase opens on 18th Feb at 3pm UTC and will last for 3 hours in order
           to ensure people from all time zones are able to participate.
         </p>
         <br />
@@ -66,9 +64,9 @@ const faqs = [
     answer: `Your Phantom wallet! Phantom's code is battle tested and we love the focus they have on protecting their users. So, you'll just be connecting your Phantom wallet to the IDO site. Ez pz!`,
   },
   {
-    question: `Can I participate in the IDO even if I don't have a SSC NFT?`,
+    question: `Can I participate in the IDO even if I don't have a NYN NFT?`,
     answer:
-      'Of course! The IDO is not tied to owning a Shadowy Super Coder NFT.',
+      'Of course! The IDO is not tied to owning a Nyan NFT.',
   },
   {
     question: `My transaction timed out while trying to deposit.`,
