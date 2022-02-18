@@ -115,11 +115,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
       <div className="bg-secondary rounded-xl p-6 text-center">
         <p className="text-sm text-secondary">NYN For Sale</p>
         <div className="flex items-center justify-center pt-2">
-          <img
-            className="h-5 mr-2 w-auto"
-            src="/icons/logo.png"
-            alt=" "
-          />
+          <img className="h-5 mr-2 w-auto" src="/icons/logo.png" alt=" " />
           <NumberText
             className="font-bold text-mdx"
             value={vaultPrtBalance}

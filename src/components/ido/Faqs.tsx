@@ -65,8 +65,7 @@ const faqs = [
   },
   {
     question: `Can I participate in the IDO even if I don't have a NYN NFT?`,
-    answer:
-      'Of course! The IDO is not tied to owning a Nyan NFT.',
+    answer: 'Of course! The IDO is not tied to owning a Nyan NFT.',
   },
   {
     question: `My transaction timed out while trying to deposit.`,

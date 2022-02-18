@@ -121,8 +121,8 @@ function ConfirmDepositModal({ open, setOpen, depositAmount, submitDeposit }) {
 const PoolContribCard: React.FC<PoolContribCardProps> = ({ pool }) => {
   const actions = useWalletStore((s) => s.actions)
   const connected = useWalletStore((s) => s.connected)
-  const connection = useWalletStore((s) => s.connection);
-  const wallet = useWalletStore((s) => s.wallet);
+  const connection = useWalletStore((s) => s.connection)
+  const wallet = useWalletStore((s) => s.wallet)
   const largestAccounts = useLargestAccounts(pool)
   const { startIdo, endIdo, endDeposits, poolStatus } = usePool(pool)
   const vaults = useVaults(pool)

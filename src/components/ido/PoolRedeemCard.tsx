@@ -42,20 +42,21 @@ const PoolRedeemCard: React.FC<PoolRedeemCardProps> = ({ pool }) => {
     const basePrice = new BigNumber(0.1)
 
     if (realTokenPrice < new BigNumber(0.1)) {
-      const tokenMultiple = realTokenPrice.dividedBy(basePrice);
-      realTokenPrice = new BigNumber(0.1);
-       //console.log('tokenMultiple', tokenMultiple.toString())
+      const tokenMultiple = realTokenPrice.dividedBy(basePrice)
+      realTokenPrice = new BigNumber(0.1)
+      //console.log('tokenMultiple', tokenMultiple.toString())
       return prtBalance && redeemableSupply
         ? ((contributeBalance * WATERMELON_TOTAL) / usdcBalance) *
             Number(tokenMultiple.toString())
         : 0
     } else {
-      var returnVal = prtBalance && redeemableSupply
-        ? (contributeBalance * prtBalance) / redeemableSupply
-        : 0
+      const returnVal =
+        prtBalance && redeemableSupply
+          ? (contributeBalance * prtBalance) / redeemableSupply
+          : 0
 
-        console.log('redeemable :' + returnVal);
-      return returnVal;
+      console.log('redeemable :' + returnVal)
+      return returnVal
     }
   }, [prtBalance, contributeBalance, mints, pool.redeemableMint])
 
