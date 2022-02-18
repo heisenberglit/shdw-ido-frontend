@@ -42,7 +42,7 @@ export const IDO_ENDPOINTS = [
   {
     network: 'devnet',
     programId: 'E1utddLK5bgAH4UqMSPLMAxQwfxwxLvjFyaXcfPRdFWg',
-    usdcMint: 'G6sqaYwBiJthGkzr9hSyVQJc93YAtgTgyLZntGPiixub',
+    usdcMint: 'cK9rKpo5vTCa9KaeT5SWp4Rn123oDyt2nbopkjMUmzG',
     pools: ['GPvQ9wT1TtstFuF3J1gwoNwGGyzzUi7eXxQ3Hdgnr47'],
   },
   // {
