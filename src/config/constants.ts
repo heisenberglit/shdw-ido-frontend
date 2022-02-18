@@ -42,8 +42,8 @@ export const IDO_ENDPOINTS = [
   {
     network: 'devnet',
     programId: 'E1utddLK5bgAH4UqMSPLMAxQwfxwxLvjFyaXcfPRdFWg',
-    usdcMint: '9unxwbn28wquNHkeM9c8fBL6dsaUQGfScZam8FvQxkdM',
-    pools: ['4TLNArb5oJPyuQm4QpLPRbZtoaPQ8Me2iZuNqb1c5zfS'],
+    usdcMint: '3C9FkSpR7SLnAq8se95kJBSYxAC9MEmNw8YbyzgdAeiW',
+    pools: ['3GAoYjpxitpEL9ZFJPntCFprrD3DcBvWH17gv1sWs92S'],
   },
   // {
   //   network: 'devnet' as web3.Cluster,
