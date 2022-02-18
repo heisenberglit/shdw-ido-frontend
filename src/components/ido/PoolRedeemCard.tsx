@@ -178,8 +178,8 @@ const PoolRedeemCard: React.FC<PoolRedeemCardProps> = ({ pool }) => {
         <div className="flex items-center justify-center pt-2">
           <img
             alt=""
-            width="20"
-            height="20"
+            width="50"
+            height="50"
             src="/icons/logo.png"
             className="mr-2"
           />

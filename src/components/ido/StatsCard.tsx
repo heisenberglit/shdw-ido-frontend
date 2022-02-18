@@ -29,7 +29,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
     tooltip: tooltipSale,
     tooltipVisible: tooltipSaleVisible,
   } = useTooltip(
-    `In the first 5 days, you may deposit your USDC into the vault. During the sale period, the NYN price can fluctuate.`,
+    `In the first 3 hours, you may deposit your USDC into the vault. During the sale period, the NYN price can fluctuate.`,
     {
       placement: 'bottom-start',
       trigger: 'hover',
@@ -40,7 +40,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
     targetRef: targetGraceRef,
     tooltip: tooltipGrace,
     tooltipVisible: tooltipGraceVisible,
-  } = useTooltip(`After 5 days, deposits will be restricted.`, {
+  } = useTooltip(`After 3 hours, deposits will be restricted.`, {
     placement: 'bottom-start',
     trigger: 'hover',
   })
