@@ -29,7 +29,7 @@ export const RPC_ENDPOINTS: WalletEndpoint[] = [
 ]
 
 export const IDO_RESULTS = {
-  GPvQ9wT1TtstFuF3J1gwoNwGGyzzUi7eXxQ3Hdgnr47: {},
+  ASugLExkBGH6V9XWdHLyMLMnQKgBqYCcCgeCsExzYPNT: {},
 }
 
 export const IDO_ENDPOINTS = [
@@ -43,7 +43,7 @@ export const IDO_ENDPOINTS = [
     network: 'devnet',
     programId: 'E1utddLK5bgAH4UqMSPLMAxQwfxwxLvjFyaXcfPRdFWg',
     usdcMint: 'cK9rKpo5vTCa9KaeT5SWp4Rn123oDyt2nbopkjMUmzG',
-    pools: ['GPvQ9wT1TtstFuF3J1gwoNwGGyzzUi7eXxQ3Hdgnr47'],
+    pools: ['ASugLExkBGH6V9XWdHLyMLMnQKgBqYCcCgeCsExzYPNT'],
   },
   // {
   //   network: 'devnet' as web3.Cluster,
