@@ -180,3 +180,27 @@ button {
   background-color: #3a3b51;
   transform: translateX(2rem);
 }
+
+.connect-wallet{
+  width: 140px;
+  border: none;
+  border-radius: 0;
+  background: url("../images/btn.png") no-repeat center center;
+  color: #FFFCF7;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  &:hover{
+    background: url("../images/btn-hover.png") no-repeat center center;
+    color: #BE7519;
+  }
+}
+
+.bg-scaffold{
+  background: url("../images/background.png") no-repeat, #0E1928;
+  background-size: 100% 100%;
+}
+
+.border-brandPrimary{
+  border-color: #FFD7A6;
+}

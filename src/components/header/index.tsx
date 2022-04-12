@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
         </div>
         <div className="flex flex-row items-center justify-end space-x-2 sm:space-x-4">
           {/* <RpcSwitcher /> */}
-          <ConnectWallet />
+          <ConnectWallet className={'connect-wallet'} />
         </div>
       </div>
     </header>
