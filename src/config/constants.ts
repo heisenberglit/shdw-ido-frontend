@@ -29,7 +29,7 @@ export const RPC_ENDPOINTS: WalletEndpoint[] = [
 ]
 
 export const IDO_RESULTS = {
-  '6jURB4E3YqgrgsFZ9WpsnMHWEZHopRAnetJi4cjYhdCM': {},
+  '5XfG3fDsEKiFVqxBX35Ck1tENyP9moK3XXw4feyVrifc': {},
 }
 
 export const IDO_ENDPOINTS = [
